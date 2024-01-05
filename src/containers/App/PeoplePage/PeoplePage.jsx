@@ -8,7 +8,6 @@ import { withErrorApi } from '@hoc-helpers/withErrorApi';
 import PropTypes from 'prop-types'
 import { useQueryParams } from '../../../hooks/useQueryParams';
 import PeopleNavigation from './PeopleNavigation';
-import UiLoading from '../../../components/UI/UiLoading/UiLoading';
 
 
 const PeoplePage = ({setErrorApi}) => {
@@ -60,7 +59,7 @@ const PeoplePage = ({setErrorApi}) => {
                             nextPage={nextPage}
                             counterPage={counterPage}
           />
-          {!people && <UiLoading theme='blue' />}                  
+                            
           {people && <PeopleList people={people} />}    
     </div>
   );
