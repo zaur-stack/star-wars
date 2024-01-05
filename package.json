@@ -9,6 +9,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "classnames": "^2.5.0",
+    "gh-pages": "^6.1.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -22,10 +23,12 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
+    "deploy": "npm run build && npm run build-gh-pages ",
     "build": "react-app-rewired build",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build-gh-pages":"gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
