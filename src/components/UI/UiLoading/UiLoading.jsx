@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import cn from 'classnames'
 
 
-const UiLoading = ({theme = 'white', isShadow = true, classes}) => {
+const UiLoading = ({theme = 'white', isShadow = true}) => {
   const [loaderIcon, setLoaderIcon] = useState(null)
   useEffect(() =>{
     switch (theme) {
