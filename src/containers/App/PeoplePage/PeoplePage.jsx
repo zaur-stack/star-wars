@@ -59,7 +59,6 @@ const PeoplePage = ({setErrorApi}) => {
                             nextPage={nextPage}
                             counterPage={counterPage}
           />
-                            
           {people && <PeopleList people={people} />}    
     </div>
   );
