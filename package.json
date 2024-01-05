@@ -1,5 +1,6 @@
 {
   "name": "react-star-wars-project",
+  "homepage": "https://zaur-stack.github.io/star-wars/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
